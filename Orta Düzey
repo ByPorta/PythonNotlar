@@ -1,0 +1,353 @@
+for i in range (11):
+    print (i,end="")
+#%% 
+for i in range(1,11):
+    print (i,end="")
+#%% 
+for i in range(2,11,2):
+    print(i,end=" ")
+#%% 
+for i in range(1,15,4):
+    print(i,end=" ")
+#%% 
+for i in range(11,-3,-2):
+    print(i,end=" ")
+#%% 
+a=int(input("başlangıç değeri giriniz:"))
+b=int(input("bitiş değeri giriniz:"))
+
+for a in range(a,b,1):
+    print(a,end=" ")
+#%% 
+toplam=0
+sayı=int(input("bir sayı giriniz:"))
+for i in range(sayı+1):
+    toplam=toplam+i
+    print("sayıların toplamı:",toplam)
+#printten önce boşluk olmaz ise direkt toplam sonucu yazar.
+#%% 
+toplam=0
+ogrencisay=int(input("öğrenci sayısını giriniz:"))
+for i in range(ogrencisay):
+    ogrencinot=int(input(f"{i+1}.öğrencinin notunu giriniz:"))
+    toplam+=ogrencinot
+if ogrencisay>0:
+    print(f"öğrencilerin ortalaması:{toplam/ogrencisay}")
+else:
+    print("ortalama hesaplanamaz...")
+#%% 
+print ("20 ile 60 arasında son rakamı 3,5,7 olan sayılar:")
+for i in range (20,60):
+    if i%10==3 or i%10==5 or i%10==7:
+        print(i,end=" ")
+#%%
+enbuyuk=0
+sayi=int(input("sayıyı giriniz: "))
+while sayi>0:
+    if sayi > enbuyuk:
+        enbuyuk=sayi
+    sayi = int(input("sayıyı giriniz: "))
+print("en büyük sayı:",enbuyuk)
+#%%
+liste=["hasan","irem","karaca"]
+type(liste)
+liste2=["haso","iro","lüleburgaz",29,11,22,True]
+liste3=["harf","cümle",12,7.8,5,["ayse","can"],8]
+#%%
+diller=["türkçe","fransızca","ingilizce","japonca arigattooooo"]
+boyut=len(diller)
+#%%
+sayılar=[[0,10],[6,60],[12,54],[67,99]]
+for i in sayılar:
+    print(i,end="--")
+#%%
+isim="hasan irem karaca"
+t=isim.split()
+print(t)
+#%%
+meyve="elma, arrrrmut, muzz"
+k=meyve.split()
+print(k)
+#%%
+meyve="elma, arrrrmut, muzz"
+j=meyve.split(", ")
+print(j)
+#%%
+harf="aeuüıioö"
+l=harf.split()
+print(l)
+#%%
+harf="aeuüıioö"
+t=harf.split("ü")
+print(t)
+#%%
+harf="aeuüıioö"
+sesli=list(harf)
+print(sesli)
+#%%
+bos=list()
+print(bos)
+#%%
+liste=["opel",2022,9.6,False,67]
+print(liste[0])
+print(liste[3])
+#%%
+liste1=["harf","cümle",12,6.7,["haso","iro","True"],9]
+#print(liste1[2:5])
+print(liste1[-3:-1])
+#%%
+liste1=["harf","cümle",12,6.7,["haso","iro","True"],9]
+print(liste1[2:])
+print(liste[:4])
+print(liste1[-4:-1])
+#%%
+liste2=["haso","iro",3,4,5,False,["haso","iro",5]]
+a,b,c,d,e,f,g=liste2
+print(e)
+#%%
+liste=["haso","iro",3,4,5,False,["bruh","kinda","moments"]]
+eleman="boboli"
+if eleman in liste:
+    print("evet burda laaaoo",eleman,"vay bee nasıl bildin")
+else:
+    print("yok kanzim",eleman,"yok ya üzgünüm ")
+#%%
+liste=["haso","iro",3,4,5,False,["bruh","kinda","moments"]]
+print(liste)
+liste3[3:6]=[True,[3,9],8.5,"haso"]
+print(liste)
+#%%
+dir(list)#bizi ilgilendirenler bunlar
+#%%
+liste=["haso","iro",3,78,9.4,False,["broo","gesgess",31]]
+liste[3:6]=[True,[3,90],8.4,"ayşe"]
+print(liste)
+#%%
+liste=["haso","iro",3,78,9.4,False,["broo","gesgess",31]]
+liste[3:7]=[True,[3,90]]
+print(liste)
+#%%
+liste=["ali","ahmet",3,78,9.4,False,["ayşe","nur",5]]
+liste.insert(3,"can")
+print(liste)
+#%%
+liste=["ali","ahmet",3,78,9.4,False,["ayşe","nur",5]]
+liste.append("mercedes")
+print(liste)#sona ekliyor
+#%%
+meyve=["elma","muz","kiraz"]
+tropikal=["mango","ananas"]
+meyve.extend(tropikal)
+print(meyve)
+#%%
+meyve=["elma","muz","kiraz"]
+tropikal=("mango","ananas")
+meyve.extend(tropikal)
+print(meyve)
+#%%
+liste=["alfaromeo",2022,9.6,False,67]
+liste.remove(2022)
+print(liste)
+#%%
+liste=["alfaromeo",2022,9.6,False,67]
+t=liste.pop(3)
+print(liste)
+#%%
+liste=["opel",2023,9.7,False,67]
+liste[1:3]=[]
+print(liste)
+#%%
+liste=["opel",2022,9.6,False,78]
+del liste[2]
+print(liste)
+#%%
+liste=["opel",2022,9.6,False,78]
+for x in liste:
+    print(x,end=" ")
+#%%
+liste=["opel",2022,9.6,False,78]
+for i in range(len(liste)):#range(5)
+    print(liste[i])
+#%%
+liste=["opel",2022,9.6,False,78]
+for i in range(len(liste)-2,len(liste)):
+    print(liste[i])
+#%%
+liste["opel",2023,9.8,False,78]
+i=0
+while i<len(liste):
+     print(liste[i])
+     i+=1
+#%%
+liste=["opel",2022,9.7,False,67]
+liste2=liste.copy()
+print(liste2)
+#%%
+liste=[]
+for i in range(10):
+    #liste+=[i]
+    liste.append(i)
+print(liste)
+#%%
+liste1=["elma","kiraz","muz"]
+liste2=[1,2,3,4]
+liste3=liste1+liste2
+print(liste3)
+#%%
+sayi=[1,11,3,5,6,7,8,5,2,262,6262]
+x=sayi.count(6)
+print(x)
+#%%
+sayi=[4,6,1,45,-5]
+sayi.sort()
+print(sayi)
+#%%
+araba=["opel","seat","fıat"]
+araba.sort()
+print(araba)#alfabetik olarak sıraladı
+#%%
+meyve=["portakal","muz","amanas","naneko"]
+meyve.sort(reverse=True)
+print(meyve)   
+#%%
+def uzunluk(k):
+    return len(k)
+#%%
+meyve=["portakal","mango","kivi","ananas","muz"]
+for indeks,eleman in enumerate(meyve):
+    print(f"indeks degeri:{indeks}--liste elemanı:{eleman}")
+#%%
+sayi=[2457,11,9,568,3,1,87]
+sayi.sort(reverse=False)
+print(sayi)
+#%%
+def uzunluk(k):
+    return len(k)
+meyve=["portakal","mango","kivi","ananas","muz"]
+meyve.sort(key=uzunluk,reverse=True)
+print(meyve)
+#%%
+def yirmi(n):
+    return abs(n-20)
+sayi=[2457,11,9,568,3,1,87]
+sayi.sort(key=yirmi,reverse=True)
+print(sayi)
+#%%
+sayi=[2457,11,9,568,3,1,85,11]
+toplam=sum(sayi)
+print(toplam)
+toplam2=sum(sayi,1000)
+print(toplam2)
+#%%
+liste=["Opel",2022,9.6,False,67]
+toplam=sum(liste)
+print(toplam)
+#%%
+sayi=[2457,11,9,568,3,1,85,11]
+enbuyuk=max(sayi)
+enkucuk=min(sayi)
+print(enbuyuk,"-",enkucuk)
+#%%
+meyve=["portakal","mango","kivi","ananas","muz"]
+son=max(meyve)
+ilk=min(meyve)
+print(son,"-",ilk)
+#%%
+meyve=["portakal","mango","kivi","ananas","muz"]
+enaz=min(meyve,key=len)
+enfazla=max(meyve,key=len)
+print(enaz,"-",enfazla)
+#%%
+meyve=["portakal","mango","kivi","ananas","muz"]
+kelime="karpuz"
+t=list(enumerate(meyve)) #liste içindeki elemanları numaralandırır.
+print(t)
+k=list(enumerate(kelime))
+print(k)
+#%%
+meyve=["portakal","mango","kivi","ananas","muz"]
+for indeks,eleman in enumerate(meyve):
+    print(f"indeks değeri:{indeks}--Liste elemanı:{eleman}")
+#%%
+harf=["a","b","c","d","e","f","g","h"]
+for indeks, eleman in enumerate(harf):
+    if indeks%2==0:
+     print(f"indeks değeri:{indeks}-Liste elemanı:{eleman}")
+#%%
+meyve=["elma","armut","muz","kşraz","kivi","portakal"]
+yeni=[]
+for x in meyve:
+    #yeni.append(x) alttakiyle aynı işlem 
+    yeni+=[x]
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[x for x in meyve]
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[]
+for x in meyve:
+    if "t" in x:
+       # yeni.append(x)
+       yeni+=[x]
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[x for x in meyve if "t" in x]
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[]
+for k in meyve :
+    if k!="muz":
+         yeni.append(k)
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kşraz","kivi","portakal"]
+yeni=[ k for k in meyve if k!="muz"]
+print(yeni)
+#%%
+sayi=[1,2,3,4,5,6,7,8,9]
+kare=[]
+for rakam in sayi:
+    kare.append(pow(rakam,2))
+print(kare)
+#%%
+sayi=[1,2,3,4,5,6,7,8,9]
+kare2=[]
+for rakam in sayi:
+    if rakam>4 and rakam%2==0:
+        kare2.append(pow(rakam,2))
+print(kare2)
+#%%
+sayi=[1,2,3,4,5,6,7,8,9]
+kare2=[pow(rakam,2) for rakam in sayi if rakam>4 and rakam%2==0]
+print(kare2)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[]
+for x in meyve:
+    if x!="muz":
+        x=x
+    else:
+        x="ananas"
+    yeni+=[x]
+print(yeni)
+#%%
+meyve=["elma","armut","muz","kiraz","kivi","portakal"]
+yeni=[]
+yeni=[x if x!="muz" else "ananas" for x in meyve]
+print(yeni)
+#%%
+liste=[[1,2,3],[4,5,6,7,8],[9,10,11,12,13,14,15]]
+liste2=[]
+for i in liste:
+    for x in i:
+        liste2.append(x)
+print(liste2)
+#%%
+liste=[[1,2,3],[4,5,6,7,8],[9,10,11,12,13,14,15]]
+liste=[]
+liste2=[x for i in liste for x in i]
+print(liste2)
