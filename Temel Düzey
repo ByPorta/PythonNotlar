@@ -1,0 +1,429 @@
+print("Hello World")
+print("Merhaba Dünya")
+
+#%%
+print("Matematiksel Yazılımlar")
+#%%
+deneme="Merhaba Dünya"
+print(deneme)
+#%%
+print('Matematiksel Yazılımlar')
+print("Matematşksel Yazılımlar")
+print("""Matematiksel Yazılımlar""")
+#%%
+print("Türkiyenin başkenti \"Ankara\"")
+print('Türkiyenin başkenti "Ankara"')
+print('Türkiye\'nin başkenti "Ankara"')
+print("""Türkiye'nin başkenti "Ankara" """)
+#%%
+print("Matematiksel","Yazılımlar")
+print("Python","Proglama","Dili")
+print("Matematiksel","Yazılımlar",sep="---")
+print("06","10","2023",sep="/")
+print(*"TC",sep=".")
+print(1,2,3,4,5,sep="--")
+print(1,2,3,4,5,sep="0 ")
+#%%
+print("Matematiksel",end="--")
+print("Yazılımlar")
+#%%
+print("trabzon\nizmir\nankara")
+print("Türkiye'deki insanlar")
+print('Türkiye\'deki insanlar')
+print("bir\t\tiki\t\tüç")
+print("bir\aiki")
+print("Merhaba\rDünya")
+#%%
+x=5
+y=3.4
+z=True
+print(9//12)
+print(9/2)
+print(9%5)
+print(4**2)
+print(-7+5+9+(4-1/8)*7)
+#%%
+A=5
+B=4
+sonuc=A**3+(3*A * B)**2 + B**2
+print(sonuc)
+#%%
+a=3
+b=4
+s=(a+b)/((b**2)+1/(a**2*b))
+print(s)
+#%%
+import math
+a=5
+s=math.sqrt((a+5)/(2+(1/a**2)))
+print(s)
+#%%
+x=4
+x*=7 #x=x*7
+print(x)
+
+y=4
+y/=3 #y=y/3
+print(y)
+
+z=4
+z%=2 #z=z%2
+print(z)
+
+a=5
+a**=3 #a=a**3
+print(a)
+#%%
+a=5
+b=3
+print(a>b)
+
+x=5
+y=4
+print(x==y)
+print(x>=y)
+#%%
+x=5
+print(x>3 and x<10)
+print(x>4 or x<1) #bir tanesi doğru olması yeterli veya için
+print(not(x>3 and x<10)) #içerdekinin değilini çıkarır
+#%%
+a="irem "
+b="hasan "
+c="karaca "
+
+print(a+" "+b+""+c)
+#%%
+e="yavaş "
+print(e*2)
+#%%
+print("x"*1)
+print("x"*2)
+print("x"*3)
+print("x"*4)
+print("x"*5)
+#%%
+cümle="{} {} yaşında bir {}dur"
+cümle.format("hasan","30","laz")
+#ayraç içine orda yazanlar geliyor
+#%%
+#değişken isimleri harfle başlamak zorundadır
+#değişken tiplerini tanımlarken arada boşluk olmayacak
+deger=5
+Deger=4
+sayi1,sayi2=23,56
+kiragideri,yiyecekgideri=1500.7,98.4
+kaydet=True
+y="ali"
+print(type(kaydet))
+#%%
+isim,soyisim="mustafa kemal","atatürk"
+print(isim+" "+soyisim)
+#%%
+isim="hasan"
+not1,not2=50,75
+print(isim,":",not1+not2)
+#%%
+isim= "mehmet"
+len(isim)#kaç harf olduğunu yazar
+list(isim) #harfleri tek tek ayırarak gösterir
+#%%
+x=[1,5,8,9]
+min(x)
+y="hasan"
+min(y)
+#%%
+r=87.4369
+round(r,3)
+#%%
+veri="python dili"
+print(veri)
+print(type(veri))
+#%%
+sayi=int(input("10-100 arasında bir sayı giriniz:"))
+birler=sayi%10
+onlar=sayi//10
+toplam=onlar+birler
+#print("basamak toplamı:",toplam)
+#print("basamak toplamı:{},format(toplam))
+#print(f"basamak toplamı:{toplam}")
+#%%
+
+celsius = int(input("Celsius derecesini girin: "))
+
+kelvin = celsius + 273
+
+15
+print(f"{celsius} Celsius, {kelvin} Kelvin'e eşittir.")
+
+#%%
+
+dolar_kuru = 26.8
+euro_kuru = 29.5
+
+tl_miktarı = 2400
+
+dolar_alınabilir = tl_miktarı / dolar_kuru
+euro_alınabilir = tl_miktarı / euro_kuru
+
+print(f"{tl_miktarı} TL ile {dolar_alınabilir:.2f} dolar alabilirsiniz.")
+print(f"{tl_miktarı} TL ile {euro_alınabilir:.2f} euro alabilirsiniz.")
+#%%
+
+a = float(input("a değerini girin: "))
+b = float(input("b değerini girin: "))
+c = float(input("c değerini girin: "))
+d = float(input("d değerini girin: "))
+
+x = (d-b)/(a-c)
+
+print(f"x = {x}")
+#%%
+a,b,c=input("Katsayıları giriniz:").split()
+x=int(d)-int(b)/ int(c)-int(a)
+
+#%%
+from math import pi 
+dis_cap=int(input("borunun dış çap değerini giriniz:"))
+ic_cap=int(input("borunun iç çap değerini giriniz:"))
+alan=((pow(dis_cap,2)-pow(ic_cap,2))*pi)/4
+print("borunun alanı:",alan)
+#%%
+from math import pi, sqrt, sin
+x=int(input("x değerini giriniz:"))
+s=int(input("s değerini:"))
+p=((2*pow(x,3/2))/3)+(sqrt(pi/2)/2)+s*(pow(1/x,11/2))+pow(sin(x),2)
+print("denklemin sonucu",p)
+#%%
+ogrencinot=int(input("notunu giriniz:"))
+if ogrencinot>70:
+    print("geçti")
+    
+else:
+    print("kaldı mal")
+#%%
+n=15
+if n>10:
+    print("sayı 10 dan büyük la")
+#%%
+from math import pi 
+cap=int(input("dairenin çapını giriniz:"))
+yaricap=cap/2
+if cap>0:
+    alan=pi*pow(yaricap,2)
+    print(f"dairenin alanı:{alan}")
+else:
+    print("pozitif değer giriniz")
+#%%
+kilo=int(input("kilonuzu giriniz:"))
+boy=float(input("boyunuzu giriniz:"))
+indeks=kilo/pow(boy,2)
+if indeks>30:
+    print("obez feminist")
+if indeks>20 and indeks<30:
+        print("normalsin kanka")
+if indeks<20:
+    print("zarrgana")
+#%%
+sayı=int(input("bir sayı giriniz:"))
+if sayı>0:
+    if sayı%2==0:
+        print(f"{sayı} pozitif çift sayıdır:")
+    else:
+        print(f"{sayı} pozitif tek sayıdır.")
+    
+else:
+    print(f"{sayı} pozitif bir sayı değildir.")
+#%%
+sayı=int(input("bir sayı giriniz:"))
+if sayı<100:
+    print("girdiğiniz sayı 100 den küçüktür.")
+if sayı<50:
+    print("girdiğiniz sayı 50 den küçüktür")
+if sayı ==100:
+    print("girdiğnizi sayı 100 e eşittir.")
+if sayı>100:
+    print("girdiğniz sayı 100den büyüktür.")
+if sayı>150:
+    print("girdiğiniz sayı 150 den büyüktür.")
+#%%
+sayı=int(input("bir sayı giriniz:"))
+if sayı<100:
+    print("girdiğiniz sayı 100 den küçüktür.")
+elif sayı<50:
+    print("girdiğiniz sayı 50 den küçüktür")
+elif sayı ==100:
+    print("girdiğnizi sayı 100 e eşittir.")
+elif sayı>100:
+    print("girdiğniz sayı 100den büyüktür.")
+elif sayı>150:
+    print("girdiğiniz sayı 150 den büyüktür.")
+#tek tek if lere bakmıyor elif sadece ilk gördüğüne bakıyor ve onu yazıyor
+#if de ise tek tek bakıyor ve doğru olanları tek tek yazıyor
+
+#%%
+ay=int(input("hangi ay:"))
+if ay==2:
+    print("{}. ay 28 gün".format(ay))
+elif ay==4 or ay==6 or ay==9 or ay==11:
+    print("{}. ay 30 gün".format(30))
+elif ay>0 and ay<13:
+    print("{}. ay 31 gün".format(ay))
+else:
+    print("yanlış değer")
+#%%
+kullanıcı_adı=input("kullanıcı adı giriniz:")
+parola=input("parola giriniz:")
+toplam=len(kullanıcı_adı)+len(parola)
+
+if toplam>20:
+    print("MAL OLMAZ BÖYLE") 
+else:
+    print("HOŞGELDİN KARDO")
+#%%
+isim=input("isim gir:")
+yaş=int(input("yaş gir:"))
+egitim_durumu=input("eğitim seviyeni gir:")
+
+if yaş>=18:
+    if egitim_durumu=="lise" or egitim_durumu=="üniversite":
+        print(f"{isim} ehliyet alabilirsin.")
+    else:
+        print(f"{isim}ehliyet alamazsın eğitim durumun yeterli değil.")
+else:
+    print(f"{isim} yaş şartını sağlamayan bir veletsin uzaklaş")
+#%%
+tutar=float(input("alışveriş tutarını giriniz:"))
+if tutar<500:
+    odenecek=tutar
+elif tutar<1001:
+    odenecek=tutar*0.95
+elif tutar<2000:
+    odenecek=tutar*0.90
+else:
+    odenecek=tutar*0.80
+print("alışveriş tutarı:",tutar)
+print("indirim miktarı:{}".format(tutar-odenecek))
+print(f"odenecek tutar:{odenecek}")
+#%%
+ilk_sayı=int(input("ilk sayıyı giriniz:"))
+ikinci_sayı=int(input("ikinci sayıyı giriniz:"))
+üçüncü_sayı=int(input("üçüncü sayıyı giriniz:"))
+
+if ilk_sayı>ikinci_sayı and ilk_sayı>üçüncü_sayı:
+    print("en büyük sayı ilk girdiğiniz sayıdır.")
+elif ikinci_sayı>ilk_sayı and ikinci_sayı>üçüncü_sayı:
+    print("en büyük sayı ikinci girdiğiniz sayıdır.")
+elif üçüncü_sayı>ilk_sayı and üçüncü_sayı>ikinci_sayı:
+    print("en yüksek sayı üçüncü sayıdır.")
+#%%
+from math import sqrt
+a=int(input("a değeri giriniz:"))
+b=int(input("b değerini giriniz:"))
+c=int(input("c değerini giriniz:"))
+delta=pow(b,2)-4*a*c
+print("delta değeri:{}".format(delta))
+if delta <0:
+    print("sanal kök") 
+elif delta==0:
+    x1=-b/(2*a)
+    print("x1={}".format(x1))
+else:
+    x1=(-b-sqrt(delta))/(2*a)
+    x2=(-b+sqrt(delta))/(2*a)
+    print("iki kök hesaplandı.")
+    print("x1={}".format(x1))
+    print("x2={}".format(x2))
+#%%
+vize=int(input("vize notunu giriniz:"))
+final=int(input("final notunu giriniz:"))
+dönemsonu=vize*0.40+final*0.60
+print(f"dönem sonu notunuz:{dönemsonu}")
+if dönemsonu>=60:
+    print("geçtiniz")
+else:
+    print("kaldınız.MAL")
+if dönemsonu>=90:
+    harfnotu="A"
+elif dönemsonu>=80 and dönemsonu<90:
+    harfnotu="B"
+elif dönemsonu>=70 and dönemsonu<80:
+    harfnotu="C"
+elif dönemsonu>=60 and dönemsonu<70:
+    harfnotu="D"
+else:
+    harfnotu="FF"
+print("harf notunuz:",harfnotu)
+#%%
+sayı=53
+bil=int(input("bil bakalım:"))
+if bil==sayı:
+    print("tebrikler la.")
+else:
+    print("yok kanzi.")
+#%%
+t=1
+while t<10:
+    t=t+1 #t+=1
+    print("iremi seviyorum")
+#%%
+tekrar=1
+while tekrar<=7:
+    print("tekrar",tekrar)
+    print("bool değeri:",bool(tekrar<=3))
+    print("---------")
+    tekrar+=1
+#%%   
+sayı=0
+while sayı<=100:
+    sayı+=1
+    if sayı%2==0:
+        print(sayı,end="-")
+#%%       
+print("26","10","2023",sep="/")
+#%%     
+sayac=1
+while sayac<=6:
+    print(sayac)
+    sayac+=1
+print("döngü sonlandı")
+#%%     
+toplam=0
+sayı=1
+while sayı<=100:
+    toplam=toplam+sayı
+    sayı+=1
+print("1-100 arasında ki sayılar toplamı=",toplam)
+#%%     
+sayı=53
+while True:
+    bil=int(input("bil bakalım ne tuttun"))
+    if bil==sayı:
+        print("helal")
+        break
+    else:
+        print("noooo")
+#%% 
+toplam=0
+i=1 
+ogrencinot=int(input(f"{i}.öğrencinin notunu giriniz:"))
+while ogrencinot>0:
+    toplam=toplam+ogrencinot
+    i+=1 
+    ogrencinot=int(input(f"{i}.ogrencinin notunu giriniz:"))
+if i>1:
+    print("ogrencilerin not ortalaması:",toplam/(i-1))
+else:
+    print("ortalaması hesaplanacak örğenci yok")
+#%% 
+başlangıç=int(input("başlangıç değerini girinz:"))
+bitiş=int(input("bitiş değerini giriniz:"))
+i=başlangıç
+while i<=bitiş:
+  i+=1 
+  if i%2==1:
+      print(i,end=" ")
+#%% 
+sesli = "aeıouü"
+for harf in sesli:
+    print(harf)
